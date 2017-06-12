@@ -1,0 +1,587 @@
+/*header at the top containing name and nav bar*/
+.header {
+  width: 100%;
+  height: 30px;
+  padding:25px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  border-bottom: 2px solid;
+  border-bottom-color:#cccccc;
+  color: #4aaaa5;
+  background: #ffffff;
+}
+
+/*this is the part with my name*/
+.myName {
+	padding: 25px;
+	margin-left: 50px;
+	color: white;
+	font-size: 28px;
+	background: #4aaaa5;
+}
+
+/*navigation bars*/
+.right {
+	margin-right:50px;
+	float: right;
+	color: blue;
+}
+
+li, a {
+	color:#777777;
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*******************************************/
+#full {	
+	height: 100%  
+}
+
+/*about me container*/
+.aside, .inAside {
+	width: 650px;
+	height: 480px;
+	margin-top: 20px;
+	margin-left: 75px;
+	float:left;
+	background: #ffffff;
+	border: solid 1px #dddddd;
+	padding: 20px;
+
+}
+
+/*connect with me container*/
+.aside2, .aside2-index, .aside2-portfolio {
+	width: 270px;
+	height:220px;
+	background: #ffffff;
+	float:right;
+	border: solid 1px #dddddd;
+	margin-top:20px;
+	margin-right:50px;
+	padding: 15px;
+}
+
+h2 {
+	color: #4aaaa5;
+	font-size:28px;
+	border-bottom: 2px solid #cccccc;
+  	padding-bottom:10px;	
+}
+
+/*The about me text part*/
+h4 {
+	font-family: arial, "Helvetica Neue", Helvetica, sans-serif;
+	color:#777777;
+	font-size:14px;
+	float:right;
+	line-height: 300%;
+}
+
+h5 {
+	padding-bottom:10px;
+	color:#4aaaa5;
+	font-size:26px;
+	text-align:center;
+	border-bottom:2px solid #cccccc;
+}
+
+hr {
+	width:75%;
+	background-color:#d3d3d3;
+	height: 1px;
+	border: 0;
+}
+
+/*3 icons for the links to linkedIn, stackoverflow, and github*/
+#icons {
+	text-align:center;
+}
+
+footer {
+	height:32px;
+	border-top: 4px solid;
+  	border-top-color:#4aaaa5;
+	background-color: #666666;
+	color:white;
+	text-align:center;
+}
+
+.footerClass {
+	padding-top:30px;
+}
+
+.mypic {
+	float:left;
+	padding-right:20px;
+	padding-bottom:20px;
+}
+
+
+#form {
+	float:left;
+	margin-top:0px;
+	padding-top:0px;
+}
+
+/*begins the css for contact me page*/
+input[type=text] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    font:arial;
+
+}
+
+/*submit button*/
+input[type=submit] {
+	font: arial;
+	height: 48px;
+	width: 128px;
+	font-size:20px;
+	text-align:center;
+	border-style:none;
+	background-color:#4aaaa5;
+	color:white;
+	padding-top:5px;
+	margin-top:0px;
+}
+
+textarea {
+	box-sizing:border-box;
+	padding:6px 6px;
+	border: solid 1px lightgrey;
+}
+
+/*begins the css for portfolio page*/
+.box-set {
+	position:absolute;
+}
+
+.box {
+	width:250px;
+	height:120px;
+	position:relative;
+}
+
+.box1 {
+	top: 25px;
+}
+
+.box2 {	
+	top: 50px;
+}
+
+.box3 {
+	top: 75px;
+}
+
+.box4 {
+	left: 360px;
+	bottom: 335px;
+}
+
+.box5 {
+	left: 360px;
+	bottom: 310px;
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+	height: 30px;
+	color:white;
+	text-align:center;
+	background:#4aaaa5;
+	z-index:2;
+	bottom: 50px;
+	position:relative;
+	padding-top: 10px;
+}
+
+/*Let's try this thing called a sticky footer. test.html for testing purposes ;) */
+html, body{
+	height:100%;
+}
+
+.page-wrap, .page-wrap-index {
+	height: 100%;
+	margin-bottom:-100px;
+	background-image: url("../images/concrete-texture.png");
+}
+
+.page-wrap:after , .page-wrap-index {
+	content: "";
+	display: block;
+}
+
+.site-footer, .page-wrap:after, .page-wrap-index:after {
+	height:100px;
+}
+
+
+/**************************************************************\
+*		*media queries begin                                    |
+****************************************************************
+* when the screen is between 980 and 769 pixels width */
+@media screen and (max-width: 980px) and (min-width: 769px)  {
+	.page-wrap-index {
+    	width: 100%;
+    	padding: 10px;
+  	}
+
+  	.page-wrap{
+  		height: 145%;
+  	}
+
+	.inAside{
+		height: 86%;
+		width: 40%;
+	}  	
+	
+	.header {
+		width: 98%;
+	}
+
+	strong {
+		padding:25px;
+		margin-left: 50px;
+		color:white;
+		font-size:28px;
+		background:#4aaaa5;
+	}
+
+	.myName {
+    	margin-left: 0px;
+    	font-weight: bold;
+    	padding: 0px;
+    	background-color:white;
+    }
+
+	.aside {
+	  width: 45%;
+	  height: 78%;
+	  margin-left: 65px;
+	}
+
+	h4 {
+	   font-weight:bold;
+	   margin: 0 auto;
+	   line-height: 150%;
+	}
+	
+	#form {
+		padding: 40px 0;
+	}
+
+	#textArea {
+		height: 400px;
+	}
+
+	#insideText {
+		font: arial;
+		color: #777777;
+		font-size: 16px;
+		line-height: 200%;
+		float:left;
+	}
+
+	h2, h5 {
+		font-weight: bold;
+	}
+
+	img.resize {
+		width: 385px;
+		height: 185px;	
+	}
+	
+	.box2 {
+		top: 120px;
+	}
+	
+	.box3 {
+		top: 220px;
+	}
+
+	.box4 {
+		left: 0px;
+		top: 320px;
+	}
+
+	.box5 {
+		left: 0px;
+		top: 420px;
+	}
+
+	.img1, .img2, .img3, .img4, .img5 {
+		width: 385px;
+	}
+}
+
+/****************************************************************
+*     when the screen is between 768 and 641 pixel width         |
+/****************************************************************/
+@media screen and (max-width: 768px) and (min-width: 641px) {
+
+	.header {
+		width: 98%;
+	}
+
+	.page-wrap {
+         width: 530 px;
+         padding: 10px;
+    }
+	
+	h2, h5 {
+		font-weight: bold;
+		text-align: left;
+	}
+
+	h4 {
+		width: 100%;
+	}
+
+	#textArea{
+		width: 670px;
+	}
+
+    .myName {
+    	margin-left: 0px;
+    	font-weight: bold;
+    	padding: 0px;
+    	background-color:white;
+    }
+
+    .insidePic {
+    	float: left;
+    	overflow:hidden;
+    }
+
+	strong {
+	padding:25px;
+	margin-left:0px;
+	color:white;
+	font-size:28px;
+	background:#4aaaa5;
+	}
+
+	.right {
+		margin-right: 30px;
+	}
+
+	.aside {
+		width: 89%;
+		margin-left: 23px;
+	}
+
+	.inAside{
+		width: 91%;
+		margin-left:15px;
+		height: 58%;
+	}
+
+	.aside2 {
+		width: 79%;
+	}
+
+	.aside2-index{
+		width: 90%;
+		margin-right: 19px;
+		height: 20%;
+	}
+
+	.aside2-portfolio{
+		padding-left: 18px;
+		width: 92%;
+		margin-right: 10px;
+		height: 17%;
+	}
+
+	#insideText {
+		font: arial;
+		color: #777777;
+		font-size: 16px;
+		line-height: 200%;
+	}
+
+	#icons {
+		text-align:left;
+	}
+
+	.box2 {
+		top: 70px;
+	}
+
+	.box3 {
+		top: 115px;
+	}
+
+	.box4 {
+		left: 365px;
+		bottom: 335px;
+	}
+
+	.box5 {
+		left: 365px;
+		bottom: 290px;
+	}
+
+
+	img.resize {
+		width: 300px;
+		height: 144px;
+	}
+
+	.img1, .img2, .img3, .img4, .img5 {
+		width: 300px;
+	}
+
+	
+}
+
+/*****************************************************
+*               when the screen is 640 or less        *
+******************************************************/
+@media screen and (max-width: 640px) {
+
+	.header{
+		height:50px;
+		position: static;
+		border-bottom: 2px solid;
+  		border-bottom-color:#cccccc;
+	}
+
+	/*this is for portfolio.html*/
+	.page-wrap {
+		height: 190%;
+         width: 100%;
+    }
+
+	/*this is for index.html and contact.html*/
+    .page-wrap-index{
+    	height: 100%
+    	width: 100%;
+    }
+
+	#full{
+		top: 10px;
+		width: 50%;
+		height: 100%;
+	}
+
+	.myName {
+		font-weight: bold;
+		position: relative;
+		bottom: 25px;
+		width:100%;
+		height: 50%;
+		margin-left:-65px;
+		margin-bottom:30px;
+		padding: 20px;
+		padding-left: 100px;
+		text-align:center;
+		right: 78px;
+
+	}
+
+	.right {
+		position:relative;
+		bottom: 45px;
+		margin-right: 0px;
+		width:100%;
+		text-align:center;
+		right: 40px;
+	}
+	
+	/*div with my picture and main text*/
+	.aside {
+		position:relative;
+		bottom: 30px;
+		width: 140%;
+		height: 500px;
+	}
+
+	h2, h5 {
+		font-weight: bold;
+		text-align: left;
+	}
+
+	.aside2 {
+		position: relative;
+		bottom: 20px;
+		left: 308px;
+		height: 10%;
+		width: 148%;
+	}
+
+	.aside2-index {
+		position: relative;
+		bottom: 35px;
+		left: 292px;
+		height: 20%;
+		width: 143%;
+	}
+
+	.aside2-portfolio {
+		margin-top: 0px;
+		 position: relative;
+		 left: 307px;
+		 width: 148%;
+	}
+
+
+	#insideText {
+		float:left;
+		font: arial;
+		color: #777777;
+		line-height: 110%;
+	}
+
+	figure.box{
+		max-width: 400px;
+		max-height:216px;
+	}
+
+	img.resize {
+		width: 450px;
+		height: 216px;
+	}
+
+	.box2 {
+		top: 140px;
+	}
+
+	.box3 {
+		top: 255px;
+	}
+
+	.box4 {
+		left: 0px;
+		top: 370px;
+	}
+
+	.box5 {
+		left: 0px;
+		top: 485px;
+	}
+
+	.inAside{
+		position:relative;
+		bottom: 30px;
+		width: 145%;
+		height:1220px;
+	}
+
+	.img1, .img2, .img3, .img4, .img5 {
+ 		width: 450px;
+	}
+
+	#icons {
+		text-align: left;
+	}
+
+	#form {
+		width: 430px;
+	}
+	
+
+}
